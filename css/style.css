@@ -5,8 +5,7 @@
 }
 
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
+    /* --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
     --bs-pink: #d63384;
     --bs-red: #dc3545;
@@ -15,20 +14,16 @@
     --bs-green: #198754;
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
-    --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
     --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
     --bs-gray-300: #dee2e6;
-    --bs-gray-400: #ced4da;
-    --bs-gray-500: #adb5bd;
     --bs-gray-600: #6c757d;
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
-    --bs-light: #f8f9fa;
     --bs-dark: #212529;
     --bs-primary-rgb: 13, 110, 253;
     --bs-secondary-rgb: 108, 117, 125;
@@ -64,33 +59,39 @@
     --bs-link-color: #0d6efd;
     --bs-link-hover-color: #0a58ca;
     --bs-code-color: #d63384;
-    --bs-highlight-bg: #fff3cd;
-
-
-
-    /* color */
-
     --bs-black: #000;
-    --bs-white: #fff;
     --bs-danger: #dc3545;
-    --bs-primary: #0d6efd;
     --bs-secondary: #6c757d;
-    --bs-success: #198754;
-
+    --bs-success: #198754; */
+    
+    
+    /* color */
+    
+    
+    --bs-highlight-bg:  #FDFBF8;
+    --bs-gray: #8D94B5;
+    --bs-white: #FFFFFF;
+    --bs-dark-blue: #051383;
+    --bs-blue: #0745F0;
+    --bs-light: #F4FBF2;
+    --bs-gray-400: #A8ADC8;
 
     /* font size */
 
-    --font-size-h1: rem; /* px */
-    --font-size-h3: rem; /*  px*/
-    --font-size-h2: rem; /*  px*/
-    --font-size-h4: rem; /*  px*/
-    --font-size-h5: rem; /*  px*/
+    --font-size-h1: 5rem; /* 80px */
+    --font-size-h2-lg: 3.75rem; /*  60px*/
+    --font-size-h2: 3.25rem; /*  52px*/
+
+    --font-size-h3-lg: 2.75rem; /*  44px*/
+    --font-size-h3: 2.5rem; /*  40px*/
+
+    --font-size-h4-lg: 2.125rem; /*  34px*/
+    --font-size-h4: 1.875rem; /*  30px*/
+
+    --font-size-h5: 1.5rem; /*  24px*/
     --font-size-h6: rem; /*  px*/
 
-    --font-size-p: rem;  /* px*/
-
-    --bs-body-font-size: 0.875rem; /* 14px */
-    --small-font-size: 0.75rem; /* 12px */
+    --font-size-p: 1.25rem;  /* 20px*/
 
 
     /* spacing  */
@@ -154,7 +155,7 @@ html{
 /*===== font size =====*/
 
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, p{
     margin: var(--spacing-0) !important;
     padding: var(--spacing-0) !important;
 }
@@ -175,9 +176,35 @@ h4{
 h5{
     font-size: var(--font-size-h5) !important;
 }
-h6{
-    font-size: var(--font-size-h6) !important;
+
+/*===== color =====*/
+
+.bs-dark-blue{
+    color: var(--bs-dark-blue) !important;
 }
+.bs-blue{
+    color: var(--bs-blue) !important;
+}
+.bs-blue.bg{
+    background-color : var(--bs-blue) !important;
+}
+.bs-white{
+    color: var(--bs-white) !important;
+}
+.bs-light{
+    background-color: var(--bs-light) !important;
+}
+.bs-gray{
+    color: var(--bs-gray) !important;
+}
+.bs-gray-400{
+    color: var(--bs-gray-400) !important;
+}
+
+
+
+
+
 
 
 /*===== padding =====*/
