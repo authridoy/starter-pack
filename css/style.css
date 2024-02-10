@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+
+
+
+    /* color */
+
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-danger: #dc3545;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+
+
+    /* font size */
+
+    --font-size-h1: rem; /* px */
+    --font-size-h3: rem; /*  px*/
+    --font-size-h2: rem; /*  px*/
+    --font-size-h4: rem; /*  px*/
+    --font-size-h5: rem; /*  px*/
+    --font-size-h6: rem; /*  px*/
+
+    --font-size-p: rem;  /* px*/
+
+    --bs-body-font-size: 0.875rem; /* 14px */
+    --small-font-size: 0.75rem; /* 12px */
+
+
+    /* spacing  */
+
+    --spacing-0: 0;/* 0px */
+    --spacing-1-5: 0.375rem;/* 6px */
+    --spacing-2-5: 0.625rem;/* 10px */
+    --spacing-3: 0.75rem;/* 12px */
+    --spacing-3-5: 0.875rem;/* 14px */
+    --spacing-4-5: 1.125rem;/* 18px */
+    --spacing-5: 1.25rem;/* 20px */
+    --spacing-5-5: 1.375rem;/* 22px */
+    --spacing-6-5: 1.625rem;/* 26px */
+    --spacing-7: 1.75rem;/* 28px */
+    --spacing-7-5: 1.875rem;/* 30px */
+    --spacing-8-5: 2.125rem;/* 34px */
+    --spacing-9: 2.25rem;/* 36px */
+    --spacing-9-5: 2.375rem;/* 38px */
+    --spacing-10: 2.5rem;/* 40px */
+    --spacing-10-5: 2.625rem;/* 42px */
+    --spacing-11: 2.75rem;/* 44px */
+    --spacing-11-5: 2.875rem;/* 46px */
+    --spacing-12-5: 3.125rem;/* 50px */
+    --spacing-13: 3.25rem;/* 52px */
+    --spacing-13-5: 3.375rem;/* 54px */
+    --spacing-14: 3.5rem;/* 56px */
+    --spacing-14-5: 3.625rem;/* 58px */
+    --spacing-15: 3.75rem;/* 60px */
+
+
+    /* Scrollbar */
+    --scroll-thumb-bg: rgba(204, 204, 204, 0.80);
+    --scroll-thumn-size: 6px;
+    --scrollnbar-radius: 40px;
+
+
+}
+
+  /* scrolbar style */
+
+::-webkit-scrollbar {
+    width: var(--scroll-thumn-size);
+    height: var(--scroll-thumn-size);
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb-bg);
+    border-radius: var(--scrollnbar-radius);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-gray);
+}
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+/*===== font size =====*/
+
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: var(--spacing-0) !important;
+    padding: var(--spacing-0) !important;
+}
+
+
+h1{
+    font-size: var(--font-size-h1) !important;
+}
+h2{
+    font-size: var(--font-size-h2) !important;
+}
+h3{
+    font-size: var(--font-size-h3) !important;
+}
+h4{
+    font-size: var(--font-size-h4) !important;
+}
+h5{
+    font-size: var(--font-size-h5) !important;
+}
+h6{
+    font-size: var(--font-size-h6) !important;
+}
+
+
+/*===== padding =====*/
+
+.py-spacing-1{
+    padding-top: var(--spacing-1) !important;
+    padding-bottom: var(--spacing-1) !important;
+}
+.px-spacing-1{
+    padding-left: var(--spacing-1) !important;
+    padding-right: var(--spacing-1) !important;
+}
+.px-spacing-1-5{
+    padding-left: var(--spacing-1-5) !important;
+    padding-right: var(--spacing-1-5) !important;
+}
+
+.py-spacing-2{
+    padding-top: var(--spacing-2) !important;
+    padding-bottom: var(--spacing-2) !important;
+}
+.px-spacing-2{
+    padding-left: var(--spacing-2) !important;
+    padding-right: var(--spacing-2) !important;
+}
+
+
+/*===== margin =====*/
+
+.mt-spacing-5{
+    margin-top: var(--spacing-5) !important;
+}
+
+/*===== radius =====*/
+
